@@ -1,0 +1,78 @@
+Scanner entrada = new Scanner(System.in);
+
+            int idade[] = new int[5];
+
+            int peso[] = new int[5];
+
+            int soma_idade= 0;
+
+            int media=0;
+
+            System.out.print("Informe a idade: ");
+
+          for (int i = 0; i < 5; i++) {
+
+             
+
+            idade[i] = entrada.nextInt();
+
+              
+
+              
+
+}
+
+System.out.print("A idade é:");
+
+for (int i = 0; i < 5; i++) {
+
+System.out.print(idade[i] + " ");
+
+}
+
+        System.out.print("Informe o peso ");
+
+        System.out.println(" O peso é: ");
+
+       for (int i = 0; i < 5; i++) {
+
+     System.out.print( peso[i] + " ");
+
+ peso[i] = entrada.nextInt();;
+
+    }
+
+     
+
+       
+
+        for (int i = 0; i < 5; i++) {
+
+       soma_idade+=peso[i];
+
+       media= (soma_idade/5);
+
+        System.out.println("\nA média é: ");
+
+        System.out.print(media + " ");
+
+        
+
+        
+
+        }
+
+        if (media>=media) {
+
+            System.out.print("\nAcima da média: "+ media);
+
+            
+
+        }
+
+    entrada.close();
+
+    
+
+    }}
+
