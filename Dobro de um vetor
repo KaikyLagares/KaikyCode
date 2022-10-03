@@ -1,0 +1,16 @@
+ int [] dobro = { 1,3,5,7,11,13,15,19,21,23};
+        Arrays.sort(dobro);
+        for ( int valor: dobro){
+              
+            System.out.print( " primeiro vetor   "  + valor);
+            
+            System.out.println( "   Dobro do vetor "  + valor*2);        
+                }
+            
+        
+        }
+    
+      
+    
+    }
+    
