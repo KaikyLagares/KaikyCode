@@ -1,0 +1,31 @@
+package javaapplication4;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author 0070352
+ */
+public class JavaApplication4 {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // TODO code application logic here
+        int n;
+        Scanner entrada= new Scanner(System.in);
+        System.out.print("Digite a nota: ");
+        n=entrada.nextInt();
+        setIdade(n);
+    }
+
+    private static void setIdade(int nota) {
+        if(nota>=60){
+            System.out.println("Nota maior ou igual a 60 ");
+        }else{
+                System.err.println("Nota menor que 60 ");
+            }
+        }
+    }
+  
