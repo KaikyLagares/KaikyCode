@@ -1,0 +1,33 @@
+public class JavaApplication4 {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // TODO code application logic here
+        int n1, n2;
+        int soma = 0;
+
+        Scanner entrada = new Scanner(System.in);
+        System.out.print("Digite o primeiro valor: ");
+        n1 = entrada.nextInt();
+
+        System.out.print(" valor 1: " + n1);
+
+        System.out.print("\nDigite o segundo valor: ");
+        n2 = entrada.nextInt();
+
+        System.out.println("valor 2: " + n2);
+          Somavalor(n1,n2);
+       
+
+    }
+
+
+    private static void Somavalor(int n1, int n2) {
+       int soma;
+        soma=n1+n2;
+        System.out.print("Digite a soma : " + soma);
+
+    }
+}
