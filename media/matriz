@@ -1,0 +1,51 @@
+package javaapplication6;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author 0070352
+ */
+public class JavaApplication6 {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // TODO code application logic here
+        int[][] notas = new int[4][10];
+        Scanner ent = new Scanner(System.in);
+        int soma[] = new int[4];
+        int media[] = new int[4];
+        int cont = 0;
+        for (int i = 0; i < 4; i++) {
+            System.out.println("Digite a " + (i + 1) + "º nota do " + (i + 1) + " º aluno: ");
+
+            for (int j = 0; j < 10; j++) {
+
+                notas[i][j] = ent.nextInt();
+
+                System.out.println("\n\nnota : " + notas[i][j]);
+
+            }
+        }
+        for (int i = 0; i < 4; i++) {
+
+            for (int j = 0; j < 10; j++) {
+
+                soma[i] = soma[i] + notas[i][j];
+            }
+        }
+        for (int i = 0; i < 4; i++) {
+
+            media[i] = soma[i] / 10;
+            System.out.println("\nMedia: " + media[i]);
+            if (media[i] > 60) {
+                cont++;
+
+            }
+            
+        }
+         System.out.println(cont + " Alunos obtiveram media superior a 60");
+    }
+}
