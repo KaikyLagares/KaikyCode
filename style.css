@@ -1,0 +1,28 @@
+body{background-color: aquamarine;
+margin:0 auto;
+padding: 0;
+box-sizing: border-box;
+
+}
+
+#menu-h ul {
+list-style: none;
+padding: 0;
+background-color: rgb(14, 5, 5);
+
+}
+
+#menu ul li {
+    display: inline;
+}
+#menu ul li a{
+    display: inline;
+    color: rgb(60, 169, 189);
+    text-decoration: none;
+    transition: background .4s;
+    padding: 20px;
+    display: inline-block;
+}
+#menu ul li a:hover{
+background-color: rgb( rgb(73, 214, 207));
+}
