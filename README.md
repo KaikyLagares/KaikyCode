@@ -20,16 +20,14 @@ Este repositório contém diversos projetos e códigos de Kaiky Lagares, criados
 
 ## Estrutura do Repositório
 
-Aqui está a estrutura geral deste repositório:
+Aqui está alguns projetos deste repositório:
 
-- `/projeto1`: Um aplicativo Java que calcula a média de notas de estudantes.
-   - Descrição: Este projeto Java inclui um programa para calcular a média de notas de estudantes com base nas notas inseridas.
+- `/Concessionária`: Um simulação em java (Spring-boot) de um sistema de venda de veículos.
+   - Descrição: Este projeto Java inclui uma atualização no banco de dados das vendas dos veículos.
 
-- `/projeto2`: Um site HTML/CSS responsivo.
-   - Descrição: Este projeto é um site simples construído com HTML e CSS, focando em design responsivo e boas práticas de front-end.
+- `/Calculadora1`: Criação de uma calculadora com interface.
+   - Descrição: Este projeto é uma implementação simples de uma calculadora.
 
-- `/utils`: Pasta com utilitários compartilhados.
-   - Descrição: Esta pasta contém bibliotecas e funções reutilizáveis que são usadas em diversos projetos deste repositório.
 ## Como Clonar
 
 Para clonar este repositório e ter acesso aos códigos:
