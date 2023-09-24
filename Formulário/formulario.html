@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Formulário Médico</title>
+    <script>
+        function mostrarCampoMedicacao() {
+            var medicacaoCheckbox = document.getElementById("sim");
+            var descricaoMedicacao = document.getElementById("medicacao_descricao");
+
+            if (medicacaoCheckbox.checked) {
+                descricaoMedicacao.style.display = "block";
+            } else {
+                descricaoMedicacao.style.display = "none";
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h1>Formulário Médico</h1>
+        <form action="#" method="post">
+            <section>
+                <h2>Informações Pessoais</h2>
+                <div class="form-group">
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="endereco">Endereço:</label>
+                    <input type="text" id="endereco" name="endereco" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="telefone">Telefone:</label>
+                    <input type="tel" id="telefone" name="telefone" required>
+                </div>
+            </section>
+
+            <section>
+                <h2>Histórico Médico</h2>
+                <div class="form-group">
+                    <label for="doencas">Doenças (selecione todas que se aplicam):</label>
+                    <label><input type="checkbox" id="variola" name="doencas" value="variola"> Variola</label>
+                    <label><input type="checkbox" id="caxumba" name="doencas" value="caxumba"> Caxumba</label>
+                    <label><input type="checkbox" id="outras_doencas" name="doencas" value="outras"> Outras Doenças</label>
+                </div>
+            </section>
+
+            <section>
+                <h2>Opções</h2>
+                <div class="form-group">
+                    <label for="doencas"> (selecione todas que se aplicam):</label>
+                    <label><input type="checkbox" id="hipertenso" name="doencas" value="hipertenso"> Hipertenso</label>
+                    <label><input type="checkbox" id="cardiaco" name="doencas" value="cardiaco"> Cardíaco</label>
+                    <label><input type="checkbox" id="diabetico" name="doencas" value="diabetico"> Diabético</label>
+                    <label><input type="checkbox" id="nenhum" name="doencas" value="nenhum"> Nenhum</label>
+                </div>
+            </section>
+
+            <section>
+                <h2>Medicação Atual</h2>
+                <div class="form-group">
+                    <label>Faz uso de medicação?</label>
+                    <label for="sim"><input type="radio" id="sim" name="medicacao_atual" value="sim" onclick="mostrarCampoMedicacao()"> Sim</label>
+                    <label for="nao"><input type="radio" id="nao" name="medicacao_atual" value="nao" onclick="mostrarCampoMedicacao()"> Não</label>
+                </div>
+            
+                <div id="medicacao_descricao" class="form-group" style="display: none;">
+                    <label for="descricao_medicacao">Se sim, diga qual medicamento está utilizando:</label>
+                    <input type="text" id="descricao_medicacao" name="descricao_medicacao">
+                </div>
+            </section>
+            
+            <div class="button-container">
+                <button type="submit">Enviar</button>
+                <button type="reset">Limpar</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
